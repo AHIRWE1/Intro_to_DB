@@ -3,7 +3,7 @@ USE alx_book_store;
 
 CREATE TABLE authors (
     author_id INT AUTO_INCREMENT PRIMARY KEY,
-    auththor_name VARCHAR(215) NOT NULL,
+    author_name VARCHAR(215) NOT NULL,
 );
 
 CREATE TABLE Books (
