@@ -41,8 +41,8 @@ def connect_to_mysql():
             for table in cursor.fetchall():
                 print(f"  - {table[0]}")
 
-    except Error as e:
-        print(f"❌ Error: {e}")
+    except mysql.connector.Error as err:
+        print(f"❌ MySQL Error: {err}")
 
     finally:
         if 'connection' in locals() and connection.is_connected():
